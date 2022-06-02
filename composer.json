@@ -1,13 +1,13 @@
 {
-    "name": "minicli/command-demo",
+    "name": "minicli/command-help",
     "type": "library",
-    "description": "A demo shareable command for Minicli",
+    "description": "A help command for Minicli",
     "license": "MIT",
-    "homepage": "https://github.com/minicli/command-demo",
-    "keywords": ["cli","command-line", "template"],
+    "homepage": "https://github.com/minicli/command-help",
+    "keywords": ["cli","command-line", "minicli"],
     "autoload": {
         "psr-4": {
-            "Vendor\\": "Command/"
+            "Command\\": "Command/"
         }
     },
     "require": {

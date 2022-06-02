@@ -17,8 +17,6 @@ $app = new App([
     'debug' => true
 ]);
 
-$app->setSignature('./minicli demo param1=value1 param2=value2');
-
 try {
     $app->runCommand($argv);
 } catch (CommandNotFoundException $notFoundException) {

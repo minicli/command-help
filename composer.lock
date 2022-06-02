@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7c65dc97dcfa4fd7c7586c1ba56409f",
+    "content-hash": "718716ae6f2d89c750eedbd2c8d5047a",
     "packages": [
         {
             "name": "minicli/minicli",
-            "version": "3.0.2",
+            "version": "3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minicli/minicli.git",
-                "reference": "d0b8f64a13fd72dd5bc4e182482dbe9a0424f9cc"
+                "reference": "ff06adefcd3a1d4dc6ba716690f6386f4d87c3fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minicli/minicli/zipball/d0b8f64a13fd72dd5bc4e182482dbe9a0424f9cc",
-                "reference": "d0b8f64a13fd72dd5bc4e182482dbe9a0424f9cc",
+                "url": "https://api.github.com/repos/minicli/minicli/zipball/ff06adefcd3a1d4dc6ba716690f6386f4d87c3fe",
+                "reference": "ff06adefcd3a1d4dc6ba716690f6386f4d87c3fe",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
             ],
             "support": {
                 "issues": "https://github.com/minicli/minicli/issues",
-                "source": "https://github.com/minicli/minicli/tree/3.0.2"
+                "source": "https://github.com/minicli/minicli/tree/3.1"
             },
             "funding": [
                 {
@@ -58,7 +58,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-31T17:20:54+00:00"
+            "time": "2022-06-02T07:47:18+00:00"
         }
     ],
     "packages-dev": [],
