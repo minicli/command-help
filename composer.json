@@ -11,6 +11,12 @@
         }
     },
     "require": {
-        "minicli/minicli": "^3.0"
+        "minicli/minicli": "^4.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.10"
+    },
+    "scripts": {
+        "lint": ["pint"]
     }
 }

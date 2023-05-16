@@ -15,7 +15,7 @@ class DefaultController extends CommandController
         parent::boot($app);
         $this->command_map = $app->commandRegistry->getCommandMap();
     }
-    
+
     public function handle(): void
     {
         $this->getPrinter()->info('Available Commands');
@@ -29,7 +29,7 @@ class DefaultController extends CommandController
                 foreach ($sub as $subcommand) {
                     if ($subcommand !== 'default') {
                         $this->getPrinter()->newline();
-                        $this->getPrinter()->out(sprintf('%s%s','└──', $subcommand));
+                        $this->getPrinter()->out(sprintf('%s%s', '└──', $subcommand));
                     }
                 }
             }
