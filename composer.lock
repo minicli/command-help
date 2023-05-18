@@ -4,37 +4,35 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "718716ae6f2d89c750eedbd2c8d5047a",
+    "content-hash": "55847a18b5c14144b115fd8e9e3595c8",
     "packages": [
         {
             "name": "minicli/minicli",
-            "version": "3.1",
+            "version": "4.0.01",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minicli/minicli.git",
-                "reference": "ff06adefcd3a1d4dc6ba716690f6386f4d87c3fe"
+                "reference": "f987872d182ab6ea1ceb94b74f9dcda9881cdeae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minicli/minicli/zipball/ff06adefcd3a1d4dc6ba716690f6386f4d87c3fe",
-                "reference": "ff06adefcd3a1d4dc6ba716690f6386f4d87c3fe",
+                "url": "https://api.github.com/repos/minicli/minicli/zipball/f987872d182ab6ea1ceb94b74f9dcda9881cdeae",
+                "reference": "f987872d182ab6ea1ceb94b74f9dcda9881cdeae",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8"
+                "ext-readline": "*",
+                "php": ">=8.1"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.5",
-                "pestphp/pest": "^1.0",
-                "phpunit/phpunit": "^9.0"
-            },
-            "suggest": {
-                "ext-readline": "For obtaining user input"
+                "mockery/mockery": "^1.5",
+                "pestphp/pest": "^2.5",
+                "phpstan/phpstan": "^1.10"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Assets\\": "tests/Assets",
                     "Minicli\\": "src/"
                 }
             },
@@ -50,7 +48,7 @@
             ],
             "support": {
                 "issues": "https://github.com/minicli/minicli/issues",
-                "source": "https://github.com/minicli/minicli/tree/3.1"
+                "source": "https://github.com/minicli/minicli/tree/4.0.01"
             },
             "funding": [
                 {
@@ -58,10 +56,77 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-02T07:47:18+00:00"
+            "time": "2023-05-12T17:25:40+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "laravel/pint",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/pint.git",
+                "reference": "c7a01fa9bdd79819e7a2f1ba63ac1b02e6692dbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/c7a01fa9bdd79819e7a2f1ba63ac1b02e6692dbc",
+                "reference": "c7a01fa9bdd79819e7a2f1ba63ac1b02e6692dbc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-tokenizer": "*",
+                "ext-xml": "*",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.16.0",
+                "illuminate/view": "^10.5.1",
+                "laravel-zero/framework": "^10.0.2",
+                "mockery/mockery": "^1.5.1",
+                "nunomaduro/larastan": "^2.5.1",
+                "nunomaduro/termwind": "^1.15.1",
+                "pestphp/pest": "^2.4.0"
+            },
+            "bin": [
+                "builds/pint"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "app/",
+                    "Database\\Seeders\\": "database/seeders/",
+                    "Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "An opinionated code formatter for PHP.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "format",
+                "formatter",
+                "lint",
+                "linter",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/pint/issues",
+                "source": "https://github.com/laravel/pint"
+            },
+            "time": "2023-04-25T14:52:30+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
