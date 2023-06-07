@@ -3,6 +3,7 @@
 namespace Command\Help;
 
 use Minicli\App;
+use Minicli\Command\CommandCall;
 use Minicli\Command\CommandController;
 
 class DefaultController extends CommandController
@@ -10,9 +11,9 @@ class DefaultController extends CommandController
     /** @var  array */
     protected $command_map = [];
 
-    public function boot(App $app): void
+    public function boot(App $app, CommandCall $input): void
     {
-        parent::boot($app);
+        parent::boot($app, $input);
         $this->command_map = $app->commandRegistry->getCommandMap();
     }
 
